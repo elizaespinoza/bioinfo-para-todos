@@ -117,7 +117,7 @@ Ahora vamos a escribir algunos comandos simples, más útiles:
 
 * Para limpiar tu terminal usa el comando <code>clear</code>.
 
-* Si quieres terminal tu sesión y cerrar tu terminal, puedes usar el comando <code>exit</code>. ***Ojo!** Si cierras ahora tu terminal tienes que [entrar de nuevo al servidor](a1.2-servidor.md).*
+* Si quieres terminal tu sesión y cerrar tu terminal, puedes usar el comando <code>exit</code>. ***Ojo!** Si cierras ahora tu terminal tienes que [entrar de nuevo al servidor](https://github.com/ElizaAlfaro/bioinfo-para-todos/blob/main/a1-2-servidor.md).*
 
 #### Navegando en el servidor
 
