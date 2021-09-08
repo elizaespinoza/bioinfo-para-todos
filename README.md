@@ -9,7 +9,7 @@ En este repositorio encontrarás una guía para iniciarte en bioinformática, to
 2. Navegando en Linux a través de la línea de comando.
 3. Manipulando datos: Acceso a datos biológicos útiles.
 4. Los conceptos básicos de la escritura de scripts Bash y su uso para la automatización de procesos.
-5. Pautas y recomendaciones para la preparación de mejores prácticas de archivos de datos en Linux para exportar a otros entornos (uso de R para análisis y visualización adicionales)
+5. Pautas y recomendaciones para la preparación de mejores prácticas de archivos de datos en Linux para exportar a otros entornos (uso de python para análisis y visualización adicionales)
 6. Ejercicio de datos biológicos utilizando diferentes escenarios de casos
 
 ## ¿Qué vas a lograr?
