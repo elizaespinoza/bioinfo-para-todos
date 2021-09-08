@@ -30,7 +30,7 @@ Vamos a realizar la parte práctica de este curso en el servidor de Bioinfo de l
 2. Digita el comando <code>ssh trujillo@150.164.23.203</code> para entrar al servidor.
 3. Digita la contraseña.
 
-¡Genial! Ya entramos en el servidor. Estamos listos para comenzar la [**parte práctica**](../a1-bashLinux.md#1-practica).
+¡Genial! Ya entramos en el servidor. Estamos listos para comenzar la [**parte práctica**](https://github.com/ElizaAlfaro/bioinfo-para-todos/blob/main/a1-bashLinux.md#1-practica).
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
