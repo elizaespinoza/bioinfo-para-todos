@@ -89,7 +89,7 @@ Este programa nos da acceso al shell y nos permite interactuar con el. Linux usa
 
 ### [Usando <code>bash</code> para bioinfo](#1-practica)
 
-¡Manos a la obra! Con tu [emulador de terminal abierto]() en tu compu, debes estar viendo <code>[trujillo@bioinfo ~]$</code>, este es el *'shell prompt'* que indica que el shell está listo para aceptar entradas.
+¡Manos a la obra! Con tu [emulador de terminal abierto](https://github.com/ElizaAlfaro/bioinfo-para-todos/blob/main/a1-2-servidor.md) en tu compu, debes estar viendo <code>[trujillo@bioinfo ~]$</code>, este es el *'shell prompt'* que indica que el shell está listo para aceptar entradas.
 
 Normalmente este va a incluir el <code>nombre-usuario@nombre-maquina</code>, seguido del directorio de trabajo actual y un signo de dólar (\$).
 
