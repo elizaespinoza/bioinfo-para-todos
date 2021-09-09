@@ -267,7 +267,7 @@ Ahora vienen unos nuevos comandos que serán de gran utilidad.
 9. Busca donde aparece <code>2</code> y <code>6</code> e muestra las líneas que los tienen.
 
 > ```shell
-> grep -v "[2|6]" sec
+> grep "[2|6]" sec
 > 2. GGCCATTCCCAGGACTTTGGACTTGGCTCCGTTGCACCCCTGAACAGAAC
 > 6. ACTGATCTCTACTACTTCGCCCCAGAGCCTGGAAGATGAGATTCTGGGAC
 > ```
