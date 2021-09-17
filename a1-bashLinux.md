@@ -318,6 +318,59 @@ Ahora vienen unos nuevos comandos que serán de gran utilidad.
 > 510703
 > ```
 
+#### Alineamiento de secuencias con Blast
+
+Vamos alinear la secuencia de [<code>ace2</code>](https://www.uniprot.org/uniprot/Q9BYF1.fasta) de *H. sapiens* contra el transcriptoma de tumor de mama <code>tumor.seq</code>, para ver si este receptor de coronavirus está expresado en este. 
+
+1. Guarda la secuencia del receptor de coronavirus en tu carpeta utilizando <code>vi</code>.
+```python
+>sp|Q9BYF1|ACE2_HUMAN Angiotensin-converting enzyme 2 OS=Homo sapiens OX=9606 GN=ACE2 PE=1 SV=2
+MSSSSWLLLSLVAVTAAQSTIEEQAKTFLDKFNHEAEDLFYQSSLASWNYNTNITEENVQ
+NMNNAGDKWSAFLKEQSTLAQMYPLQEIQNLTVKLQLQALQQNGSSVLSEDKSKRLNTIL
+NTMSTIYSTGKVCNPDNPQECLLLEPGLNEIMANSLDYNERLWAWESWRSEVGKQLRPLY
+EEYVVLKNEMARANHYEDYGDYWRGDYEVNGVDGYDYSRGQLIEDVEHTFEEIKPLYEHL
+HAYVRAKLMNAYPSYISPIGCLPAHLLGDMWGRFWTNLYSLTVPFGQKPNIDVTDAMVDQ
+AWDAQRIFKEAEKFFVSVGLPNMTQGFWENSMLTDPGNVQKAVCHPTAWDLGKGDFRILM
+CTKVTMDDFLTAHHEMGHIQYDMAYAAQPFLLRNGANEGFHEAVGEIMSLSAATPKHLKS
+IGLLSPDFQEDNETEINFLLKQALTIVGTLPFTYMLEKWRWMVFKGEIPKDQWMKKWWEM
+KREIVGVVEPVPHDETYCDPASLFHVSNDYSFIRYYTRTLYQFQFQEALCQAAKHEGPLH
+KCDISNSTEAGQKLFNMLRLGKSEPWTLALENVVGAKNMNVRPLLNYFEPLFTWLKDQNK
+NSFVGWSTDWSPYADQSIKVRISLKSALGDKAYEWNDNEMYLFRSSVAYAMRQYFLKVKN
+QMILFGEEDVRVANLKPRISFNFFVTAPKNVSDIIPRTEVEKAIRMSRSRINDAFRLNDN
+SLEFLGIQPTLGPPNQPPVSIWLIVFGVVMGVIVVGIVILIFTGIRDRKKKNKARSGENP
+YASIDISKGENNPGFQNTDDVQTSF
+```
+
+2. Como nuestra query corresponde una secuencia proteica y nuestros trasncriptos son conformados por nucleótidos, vamos utilizar la modalidad tblastn.
+
+```shell
+blastall -p tblastn -i ace2 -d /home/trujillo/data/tumor.seq -e 1e-10 -F F -a 20 -o salida &
+ls
+less salida
+```
+
+3. Continuaremos con la modalidad tblastn, mas visualizaremos la salida tabulada y comentada.
+
+```shell
+blastall -p tblastn -i ace2 -d /home/trujillo/data/tumor.seq -e 1e-10 -F F -a 20 -o m9salida -m 9 &
+ls
+less m9salida
+```
+4. Ahora vamos a visualizar esta salida tabulada no comentada <code>m8salida</code>.
+
+```shell
+blastall -p tblastn -i ace2 -d /home/trujillo/data/tumor.seq -e 1e-10 -F F -a 20 -o m8salida -m 8 &
+ls
+less m8salida
+```
+
+5. Con esta salida tabulada sin comentarios, vamos a contar cuantos transcriptos de ace2 tenemos en nuestro transcriptoma <code>tumor.seq</code>.
+
+```shell
+cat m8salida | cut -f 1 | wc
+      8       8     168
+```
+
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
