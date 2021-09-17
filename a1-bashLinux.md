@@ -47,7 +47,7 @@ Una distro incluye determinados paquetes de software para satisfacer las necesid
 
 | Común           | Difiere                  |
 |-----------------|--------------------------|
-| <i class="fas fa-check"></i>  kernel Linux    | <i class="fas fa-times"></i> softwares de instalación |
+| <img src="https://img.icons8.com/material/24/000000/checkmark--v1.png"/>  kernel Linux    | <i class="fas fa-times"></i> softwares de instalación |
 | <i class="fas fa-check"></i>  GNU             | <i class="fas fa-times"></i> exploradores web         |
 | <i class="fas fa-check"></i>  editor de texto | <i class="fas fa-times"></i> documentación            |
 | <i class="fas fa-check"></i>  etc             |  <i class="fas fa-times"></i> suporte de la comunidad  |
