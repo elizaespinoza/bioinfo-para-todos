@@ -341,7 +341,7 @@ SLEFLGIQPTLGPPNQPPVSIWLIVFGVVMGVIVVGIVILIFTGIRDRKKKNKARSGENP
 YASIDISKGENNPGFQNTDDVQTSF
 ```
 
-2. Como nuestra query corresponde una secuencia proteica y nuestros trasncriptos son conformados por nucleótidos, vamos utilizar la modalidad tblastn.
+2. Como nuestra query corresponde una secuencia proteica y nuestros transcriptos son conformados por nucleótidos, vamos utilizar la modalidad tblastn.
 
 ```shell
 blastall -p tblastn -i ace2 -d /home/trujillo/data/tumor.seq -e 1e-10 -F F -a 20 -o salida &
@@ -356,7 +356,7 @@ blastall -p tblastn -i ace2 -d /home/trujillo/data/tumor.seq -e 1e-10 -F F -a 20
 ls
 less m9salida
 ```
-4. Ahora vamos a visualizar esta salida tabulada no comentada <code>m8salida</code>.
+4. Ahora vamos a visualizar esta salida tabulada no comentada lamada <code>m8salida</code>.
 
 ```shell
 blastall -p tblastn -i ace2 -d /home/trujillo/data/tumor.seq -e 1e-10 -F F -a 20 -o m8salida -m 8 &
